@@ -1,0 +1,7 @@
+.kartya{
+    height: auto;
+    width: 15rem;
+    border: 1px ridge blue;
+    margin-block: 1rem;
+    margin-inline: auto;
+}

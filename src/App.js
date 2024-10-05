@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Kartyak from './components/Kartyak.js';
+import { lista } from './adatlista';
 
 function App() {
+  
   return (
+    // egy gyökér elem lehet csak a return ágban
+    // páratlan tagaket is le kell zárni <img/>, lsd img
+    // map, forEach-hez hasonló, de eredménye van, visszatér egy értékkel (komponens elemmel) minden körben lefutás alatt
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Első app
+       
       </header>
+      <article>
+       
+     <Kartyak lista = {lista}/>
+     
+      </article>
+      <footer>Massányi Csilla</footer>
     </div>
   );
 }
